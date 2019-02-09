@@ -1,0 +1,112 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #333;
+}
+
+
+a {
+	text-decoration: none;
+	color: #0AC986;
+}
+
+.login-form {
+	width: 21%;
+	height: auto;
+	position: absolute;
+	padding: 38px 23px;
+	background: #eee;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-bottom: 5px solid gray;
+	border-radius: 4px;
+}
+
+.login-face {
+	width: 56%;
+    height: 56%;
+    position: relative;
+    margin: 15px auto;
+    border-radius: 100%;
+}
+
+.login-face>img {
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.form {
+	width: 100%;
+	position: relative;
+	margin: 25px auto;
+}
+
+.input {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	margin: 15px auto;
+}
+
+.wrongmsg {
+	font-size: 16px;
+	font-family: sans-serif, Arial;
+	color: red;
+	display: none;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	outline: none;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: sans-serif, Arial;
+}
+
+.fa {
+	position: absolute;
+	right: 5px;
+	top: 16px;
+	font-size: 20px;
+	color: gray;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	border: 2px solid #0AC986;
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 50px;
+	background: #0AC986;
+	font-family: sans-serif, Arial;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #00ffcc;
+}
+
+.error {
+	position: relative;
+	animation: shake 1s;
+}
+
+@keyframes shake { 
+	0% , 100% {left: 0px;}
+	20%, 80% {left:-15px;}
+    40%, 60% {left:15px;}
+    }
